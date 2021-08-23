@@ -8,20 +8,21 @@
     <!-- Tailwind  css-->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <section>
-        <div class="container mx-auto">
-            <h1>stop watch</h1>
-            <h2>Vanilla javascript stop watch</h2>
-            <h1>
-                <span >00</span>:<span>00</span>
+<body class="bg-pink-300">
+    <section class="my-12">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold  my-4 uppercase text-gray-600">stop watch</h1>
+            <h2 class="text-4xl font-bold  my-4 uppercase text-gray-600">Vanilla javascript stop watch</h2>
+            <h1 class="text-8xl font-bold  my-12 uppercase">
+                <span id="minute-field">00</span>:<span id="second-field">00</span>:<span id="ten-field">00</span>
             </h1>
-            <div class="buttons">
-                <button>start</button>
-                <button>stop</button>
-                <button>reset</button>
+            <div class="buttons my-12">
+                <button id="start-btn" class="py-2  px-6 text-xl mx-2 rounded-lg font-semibold border border-gray-600 border-opacity-50 duration-300 hover:bg-pink-600 hover:border-transparent">Start</button>
+                <button id="stop-btn" class="py-2  px-6 text-xl mx-2 rounded-lg font-semibold border border-gray-600 border-opacity-50 duration-300 hover:bg-pink-600 hover:border-transparent">Stop</button>
+                <button id="reset-btn" class="py-2  px-6 text-xl mx-2 rounded-lg font-semibold border border-gray-600 border-opacity-50 duration-300 hover:bg-pink-600 hover:border-transparent">Reset</button>
             </div>
         </div>
     </section>
+    <script src="app.js"></script>
 </body>
 </html>
